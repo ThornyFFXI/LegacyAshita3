@@ -1,0 +1,33 @@
+Lootwhore is a treasure pool management plugin, designed for those who multibox and need to deal with the pool at all times.
+It has an emphasis on quick/easy configuration, without leaving ffxi.
+Simply create a profile with the ingame commands, export it, and load it on the other characters that need to use it.
+
+/lw auto [on/off] - Sets or toggles(if not specified) autoload.
+If enabled, autoload will look in Ashita/Config/Lootwhore/Auto(if it exists) for:
+CharName_ZoneID.xml
+ZoneID.xml
+CharName.xml
+in that order upon zoning and automatically load the first match if any.
+It is smart to use zonereset in all of these profiles so they reset when you leave the zone.
+
+/lw profile [Profile Name] - Load settings from a profile.  Any settings not listed in the profile are reset to default, not ignored.
+/lw export [Profile Name] - Save current settings to a profile.
+/lw reset - Clear item list and restore all settings to default.
+/lw add [Keyword/Item ID/Item Name] [Lot/Store/Pass/Drop/Ignore] - Add an item to active list.
+-If an item is set to Store, it will be lotted, but it'll also be moved to sack/satchel/case(whichever has space) whenever a full stack is in inventory.
+-If an item is set to Drop, it will be passed, but it'll also be dropped whenever any are in inventory.
+/lw remove [Keyword/Item ID/Item Name] - Remove an item from active list.
+/lw list - Displays current item list.
+/lw lot - Lot all items in pool that you haven't already passed.
+/lw pass - Pass all items in pool that you haven't already lotted.
+
+WARNING : When using /lw lot or /lw pass, the plugin will not be aware of passes and lots that happened prior to loading the plugin.  This may result in passing items you had already lotted.  If you do not keep lootwhore in your autoload, please keep this in mind.
+
+/lw default [Lot/Pass/Ignore] - Change what action is done on items not in active list.  Default: Ignore
+/lw smartpass [On/Off] - Enable or disable smartpass(passes items if anyone else lots them).  Default: OFF
+/lw rarepass [On/Off] - Enable or disable rarepass(passes rare marked items if you have them).  Default: OFF
+/lw zonereset [On/Off] - Enable or disable zonereset(resets lootwhore upon zoning). Default: OFF
+
+NOTE: Lootwhore keeps track of the pool using packets, not memory.  This means that you
+cannot load it and immediately /lw pass: It won't know what's in your pool, and as a result it won't do anything.
+You can avoid this by keeping it on autoload and simply doing /lw reset when you no longer need any automatic lot/pass. 

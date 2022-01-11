@@ -1,0 +1,60 @@
+<oseem>
+	<profile>
+		<augment id="512">STR</augment>
+		<augment id="513">DEX</augment>
+		<augment id="514">VIT</augment>
+		<augment id="515">AGI</augment>
+		<augment id="516">INT</augment>
+		<augment id="517">MND</augment>
+		<augment id="1792">(Pet)STR</augment>
+		<augment id="1793">(Pet)DEX</augment>
+		<augment id="1794">(Pet)VIT</augment>
+		<augment id="1795">(Pet)AGI</augment>
+		<augment id="1796">(Pet)INT</augment>
+		<augment id="1797">(Pet)MND</augment>
+		<augment id="1798">(Pet)CHR</augment>
+		
+		<augment id="23" subid="68">Accuracy</augment>
+		<augment id="25" subid="68">Attack</augment>
+		<augment id="27" subid="69">R.Accuracy</augment>
+		<augment id="29" subid="69">R.Attack</augment>
+		<augment id="35" subid="70">M.Accuracy</augment>
+		<augment id="133" subid="70">Magic Attack Bonus</augment>
+		<augment id="106">(Pet)Accuracy</augment>
+		<augment id="106">(Pet)R.Accuracy</augment>
+		<augment id="107">(Pet)Attack</augment>
+		<augment id="107">(Pet)R.Attack</augment>
+		<augment id="100">(Pet)M.Accuracy</augment>
+		<augment id="101">(Pet)Magic Attack Bonus</augment>
+		
+		<augment id="142">Store TP</augment>
+		<augment id="143">Double Attack</augment>
+		<augment id="144">Triple Attack</augment>
+		<augment id="145">Counter</augment>
+		<augment id="146">Dual Wield</augment>
+		<augment id="327">WS Damage</augment>
+		<augment id="328">Crit. Hit Dmg.</augment>
+		<augment id="41">Crit. Hit Rate</augment>
+		<augment id="332">Skillchain Dmg.</augment>
+		<augment id="330">Waltz Potency</augment>
+		
+		<augment id="237">Occult Acumen</augment>
+		<augment id="334">Magic Burst Dmg.</augment>
+		<augment id="140">Fast Cast</augment>
+		<augment id="343">Drain/Aspir Potency</augment>
+		
+		<augment id="369">Blood Pact Dmg.</augment>
+		<augment id="341">Repair Potency</augment>
+		<augment id="123">(Pet)Double Attack</augment>
+		<augment id="111">(Pet)Haste</augment>
+		<augment id="109">(Pet)Crit. Hit Rate</augment>
+		<augment id="116">(Pet)Subtle Blow</augment>
+		<augment id="110">(Pet)Regen</augment>
+		<augment id="115">(Pet)Store TP</augment>
+		<augment id="118">(Pet)Physical Damage Taken</augment>
+		
+		<augment id="54">Physical Damage Taken</augment>
+		<augment id="55">Magic Damage Taken</augment>
+		<augment id="71">Damage Taken</augment>
+	</profile>
+</oseem>

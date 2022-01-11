@@ -1,0 +1,216 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<head>Whirlpool Mask</head>
+			<neck>Twilight Torque</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Manibozho Jerkin</body>
+			<hands>Nvrch. Gants +2</hands>
+			<lring>Defending Ring</lring>
+			<rring>Shadow Ring</rring>
+			<back>Repulse Mantle</back>
+			<waist>Flume Belt</waist>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Skd. Jambeaux +1</feet>
+		</set>
+		<set name="TP">
+			<head>Iuitl Headgear +1</head>
+			<neck>Asperity Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Thaumas Coat</body>
+			<hands>Iuitl Wristbands</hands>
+			<lring>Defending Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Windbuffet Belt</waist>
+			<legs>Iuitl Tights</legs>
+			<feet>Manibozho boots</feet>
+		</set>
+		<set name="TP-Acc">
+			<head>Whirlpool Mask</head>
+			<neck>Ej Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Heartseeker Earring</rear>
+			<body>Manibozho Jerkin</body>
+			<hands>Buremte Gloves</hands>
+			<lring>Defending Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Hurch'lan Sash</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Manibozho boots</feet>	
+		</set>
+		<set name="QD">
+			<range>Pulfanxa</range>
+			<ammo>Adlivun Bullet</ammo>
+			<head>Blood Mask</head>
+			<neck>Stoicheion Medal</neck>
+			<lear>Novio Earring</lear>
+			<rear>Hecate's Earring</rear>
+			<body>Mirke Wardecors</body>
+			<hands>Kheper Wristbands</hands>
+			<lring>Stormsoul Ring</lring>
+			<rring>Blobnag Ring</rring>
+			<back>Forban Cape</back>
+			<waist>Aquiline Belt</waist>
+			<legs>Shneddick Tights</legs>
+			<feet>Nvrch. Bottes +2</feet>
+		</set>
+		<set name="QD-LD" baseset="QD">		
+			<lear>Lifestorm Earring</lear>
+			<rear>Psystorm Earring</rear>
+		</set>
+		<set name="Steps">
+			<head>Whirlpool Mask</head>
+			<neck>Ej Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Heartseeker Earring</rear>
+			<body>Manibozho Jerkin</body>
+			<hands>Buremte Gloves</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Hurch'lan Sash</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Manibozho boots</feet>				
+		</set>
+		<set name="Exenterator">
+			<head>Whirlpool Mask</head>
+			<neck>Soil Gorget</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Manibozho Jerkin</body>
+			<hands>Iuitl Wristbands</hands>
+			<lring>Stormsoul Ring</lring>
+			<rring>Blobnag Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Soil Belt</waist>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Manibozho boots</feet>
+		</set>
+		<set name="LastStand">
+			<ammo>Adlivun Bullet</ammo>
+			<head>Whirlpool Mask</head>
+			<neck>Flame Gorget</neck>
+			<lear>Auster's Pearl</lear>
+			<rear>Suppanomimi</rear>
+			<body>Kheper Jacket</body>
+			<hands>Manibozho Gloves</hands>
+			<lring>Stormsoul Ring</lring>
+			<rring>Blobnag Ring</rring>
+			<back>Thall Mantle</back>
+			<waist>Flame Belt</waist>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Iuitl Gaiters</feet>
+		</set>
+		<set name="Requiescat">
+			<head>Whirlpool Mask</head>
+			<neck>Soil Gorget</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Manibozho Jerkin</body>
+			<hands>Iuitl Wristbands</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Soil Belt</waist>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Iuitl Gaiters</feet>
+		</set>
+		<set name="Wildfire">
+		</set>
+		<set name="Cure">
+			<main>Sanus Ensis</main>
+		</set>
+		<set name="Ni">
+			<head>Whirlpool Mask</head>
+			<body>Manibozho Jerkin</body>
+			<waist>Hurch'lan Sash</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Manibozho boots</feet>
+		</set>
+		<set name="PDT">
+			<neck>Twilight Torque</neck>
+			<lring>Defending Ring</lring>
+			<back>Repulse Mantle</back>
+			<waist>Flume Belt</waist>
+		</set>
+		<set name="MDT"><!--needs 23-->
+			<neck>Twilight Torque</neck>
+			<lring>Defending Ring</lring>
+			<rring>Shadow Ring</rring>
+			<back>Engulfer Cape</back>
+		</set>
+		<include>
+			<item>Vanir Knife</item>
+			<item>Eminent Scimitar</item>
+			<item quantity="12">Trump Card Case</item>
+			<item quantity="all">Trump Card</item>
+			<item quantity="all">Adlivun Bullet</item>
+			<item quantity="3">Hydra Kofte</item>
+			<item quantity="12">Squid Sushi +1</item>
+			<item quantity="12">Toolbag (Shihe)</item>
+			<item quantity="all">Shihei</item>
+		</include>
+	</sets>
+
+	<inputcommands>
+		<cmd input="/trigger2">
+			<gearlock delay="5" />
+			<equip set="PDT" />
+		</cmd>
+		<cmd input="/trigger3">
+			<gearlock delay="5" />
+			<equip set="MDT" />
+		</cmd>
+	</inputcommands>
+
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="TP-Acc" />
+		</if>
+		<else>
+			<equip set="Stand" />
+			<if p_subjob="whm|blm|rdm">
+				<equip>
+					<head>Wivre Hairpin</head>
+				</equip>
+			</if>
+		</else>
+	</idlegear>
+
+	<jobability>
+		<if ad_name="*Roll|Double-Up">
+			<equip>
+				<head>Comm. Tricorne +2</head>
+				<hands>Nvrch. Gants +2</hands>
+			</equip>
+			<if ad_name="Tactician's Roll"><equip><body>Nvrch. Frac +2</body></equip></if>
+		</if>
+		<if ad_name="Random Deal"><equip><body>Commodore Frac</body></equip></if>
+		<if ad_name="Wild Card"><equip><feet>Comm. Bottes +2</feet></equip></if>
+		<if ad_name="Light Shot|Dark Shot"><equip set="QD-LD" /></if>
+		<elseif ad_name="* Shot"><equip set="QD" /></elseif>
+	</jobability>
+
+	<weaponskill>
+		<if ad_name="Last Stand">
+			<if at_name="Faded Craklaw|Krabakarpo" eq_main="Eminent Scimitar">
+				<change id="226" />
+				<equip set="Requiescat" />
+			</if>
+			<else><equip set="LastStand" /></else>
+		</if>
+		<elseif ad_name="Wildfire"><equip set="Wildfire" /></elseif>
+		<elseif ad_name="Exenterator"><equip set="Exenterator" /></elseif>
+		<elseif ad_name="Requiescat"><equip set="Requiescat" /></elseif>
+	</weaponskill>
+</ashitacast>

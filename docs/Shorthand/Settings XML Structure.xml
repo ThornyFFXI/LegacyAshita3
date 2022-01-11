@@ -1,0 +1,27 @@
+<shorthand>
+
+	<settings>
+		<packetws>true</packetws>
+		<impact>true</impact>
+		<dispelga>true</dispelga>
+		<honor>true</honor>
+	</settings>
+	
+	<spell id="374"> <!--Foe Requiem VII-->
+		<name>req</name>
+		<name>DoT<name> <!--You can add as many names as you like per spell.
+							These are parsed as if they're the official name
+							when using shorthand, so you can //req or /ma dot
+							to trigger requiem 7 in this example.-->
+	</spell>
+	<spell id="378"> <!--Army's Paeon-->
+		<command>/ap</command>
+		<command>ap</command> <!--You can also add as many commands as you like,
+								or a combination of commands and names.  Commands
+								must be the start of the typed portion, but aren't
+								limitted by any structure.  You could type 'ap thorny'
+								to cast paeon targetting a player named thorny in
+								this example.-->
+	</spell>
+
+</shorthand>

@@ -1,0 +1,11 @@
+Gearlock stops characters from 'blinking' when they swap gear.
+
+Commands
+-All settings default to on.
+-Commands with [on/off] will be used as a toggle if it is not specified.
+
+/gl blink - Update all models to what they're actually wearing.
+/gl self [on/off]   - When enabled, will stop you from blinking.
+/gl target [on/off] - When enabled, will stop your target from blinking.
+/gl others [on/off] - When enabled, will stop all other PCs from blinking.
+/gl invis [on/off]  - When enabled, will make players with invisible status appear visible.

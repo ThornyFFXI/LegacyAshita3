@@ -1,0 +1,166 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<ammo>Demonry Stone</ammo>
+			<head>Otronif Mask +1</head>
+			<neck>Twilight Torque</neck>
+			<lear>Merman's Earring</lear>
+			<rear>Merman's Earring</rear>
+			<body>Otro. Harness +1</body>
+			<hands>Otronif Gloves +1</hands>
+			<lring>Defending Ring</lring>
+			<rring>Shadow Ring</rring>
+			<back>Repulse Mantle</back>
+			<waist>Black Belt</waist>
+			<legs>Otronif Brais +1</legs>
+			<feet>Hermes' Sandals</feet>
+		</set>
+		<set name="TP-Acc0">
+			<ammo>Hagneia Stone</ammo>
+			<head>Felistris Mask</head>
+			<neck>Asperity Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Thaumas Coat</body>
+			<hands>Otronif Gloves +1</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Windbuffet Belt</waist>
+			<legs>Otronif Brais +1</legs>
+			<feet>Otronif Boots +1</feet>
+		</set>
+		<set name="TP-Acc1" baseset="TP-Acc0">
+			<ammo>Honed Tathlum</ammo>
+			<hands>Hes. Gloves +1</hands>
+			<back>Letalis Mantle</back>
+		</set>
+		<set name="TP-Acc2" baseset="TP-Acc0">
+			<ammo>Honed Tathlum</ammo>
+			<head>Whirlpool Mask</head>
+			<hands>Hes. Gloves +1</hands>
+			<back>Letalis Mantle</back>
+			<legs>Manibozho Brais</legs>
+		</set>
+		<set name="TP-Acc3" baseset="TP-Acc0">
+			<ammo>Honed Tathlum</ammo>
+			<head>Whirlpool Mask</head>
+			<neck>Ej Necklace</neck>
+			<body>Manibozho Jerkin</body>
+			<hands>Hes. Gloves +1</hands>
+			<lring>Mars's Ring</lring>
+			<back>Letalis Mantle</back>
+			<waist>Anguinus Belt</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Manibozho boots</feet>
+		</set>
+		<set name="TP-Hybrid">
+			<ammo>Honed Tathlum</ammo>
+			<head>Lithelimb Cap</head>
+			<neck>Ej Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Qaaxo Harness</body>
+			<hands>Qaaxo Mitaines</hands>
+			<lring>Defending Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Anguinus Belt</waist>
+			<legs>Qaaxo Tights</legs>
+			<feet>Qaaxo Leggings</feet>				
+		</set>
+		<set name="Smite-Acc0">
+			<ammo>Potestas Bomblet</ammo>
+			<head>Uk'uxkaj Cap</head>
+			<neck>Light Gorget</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Manibozho Jerkin</body>
+			<hands>Otronif Gloves +1</hands>
+			<lring>Pyrosoul Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Light Belt</waist>
+			<legs>Otronif Brais +1</legs>
+			<feet>Otronif Boots +1</feet>		
+		</set>
+		<set name="Smite-Acc1" baseset="Smite-Acc0">
+		</set>
+		<set name="Smite-Acc2" baseset="Smite-Acc0">
+		</set>
+		<set name="Smite-Acc3" baseset="Smite-Acc0">
+		</set>
+		<set name="Smite-Hybrid" baseset="Smite-Acc0" />
+		<set name="PDT">
+			<head>Otronif Mask +1</head>
+			<neck>Twilight Torque</neck>
+			<body>Otro. Harness +1</body>
+			<hands>Otronif Gloves +1</hands>
+			<lring>Defending Ring</lring>
+			<back>Mollusca Mantle</back>
+			<waist>Black Belt</waist>
+			<legs>Otronif Brais +1</legs>
+			<feet>Otronif Boots +1</feet>
+		</set>
+		<set name="MDT"><!--needs 23-->
+			<ammo>Demonry Stone</ammo>
+			<neck>Twilight Torque</neck>
+			<lear>Merman's Earring</lear>
+			<rear>Merman's Earring</rear>
+			<lring>Defending Ring</lring>
+			<rring>Shadow Ring</rring>
+			<back>Mollusca Mantle</back>
+		</set>
+		<include>
+			<item>Tinhaspa</item>
+			<item quantity="12">Remedy</item>
+			<item quantity="3">Hydra Kofte</item>
+		</include>
+	</sets>
+
+	<variables>
+		<var name="Set">Acc0</var>
+	</variables>
+		
+	<inputcommands>
+		<cmd input="/trigger2">
+			<gearlock delay="5" />
+			<equip set="PDT" />
+		</cmd>
+		<cmd input="/trigger3">
+			<gearlock delay="5" />
+			<equip set="MDT" />
+		</cmd>
+		<cmd input="/changeset ">
+			<setvar name="Set" value="%arg1" />
+			<addtochat color="159">TP Set: $Set</addtochat>
+			<doidlegear />
+		</cmd>
+	</inputcommands>
+
+	<idlegear>
+		<if eq_main="nothing"><equip><main>Tinhaspa</main></equip></if>
+		<if p_status="engaged"><equip set="TP-$Set" /></if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<jobability>
+		<if ad_name="Chakra"><equip><hands>Hes. Gloves +1</hands></equip></if>
+		<elseif ad_name="Formless Strikes"><equip><body>Hes. Cyclas</body></equip></if>
+		<elseif ad_name="Counterstance|Mantra"><equip><feet>Mel. Gaiters +2</feet></equip></if>
+		<elseif ad_name="Hundred Fists"><equip><legs>Mel. Hose +2</legs></equip></if>
+	</jobability>
+
+	<weaponskill>
+		<if ad_name="Victory Smite">
+			<equip set="Smite-$Set" />
+			<if buffactive="Impetus"><equip><body>Tantra Cyclas +2</body></equip></if>
+		</if>
+	</weaponskill>
+</ashitacast>

@@ -1,0 +1,182 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<head>Lithelimb Cap</head>
+			<neck>Twilight Torque</neck>
+			<lear>Merman's Earring</lear>
+			<rear>Merman's Earring</rear>
+			<body>Xaddi Mail</body>
+			<hands>Xaddi Gauntlets</hands>
+			<lring>Defending Ring</lring>
+			<rring>Patricius Ring</rring>
+			<back>Repulse Mantle</back>
+			<waist>Flume Belt</waist>
+			<legs>Xaddi Cuisses</legs>
+			<feet>Danzo Sune-Ate</feet>
+		</set>	
+		
+		<set name="TP-Hybrid">
+			<head>Yaoyotl Helm</head>
+			<neck>Iqabi Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Xaddi Mail</body>
+			<hands>Xaddi Gauntlets</hands>
+			<lring>Defending Ring</lring>
+			<rring>Patricius Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Dynamic Belt +1</waist>
+			<legs>Xaddi Cuisses</legs>
+			<feet>Xaddi Boots</feet>
+		</set>	
+		
+		<set name="TP-Yoichi">
+			<head>Yaoyotl Helm</head>
+			<neck>Ganesha's Mala</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Miki. Breastplate</body>
+			<hands>Buremte Gloves</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Mars's Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Dynamic Belt +1</waist>
+			<legs>Unkai Haidate +2</legs>
+			<feet>Mikinaak Greaves</feet>
+		</set>
+		
+		<set name="TP-Mura">
+			<head>Otronif Mask +1</head>
+			<neck>Ganesha's Mala</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Otro. Harness +1</body>
+			<hands>Otronif Gloves +1</hands>
+			<lring>Rajas Ring</lring>
+			<rring>K'ayres Ring</rring>
+			<back>Misuuchi Kappa</back>
+			<waist>Windbuffet Belt</waist>
+			<legs>Unkai Haidate +2</legs>
+			<feet>Otronif Boots +1</feet>
+		</set>
+		
+		
+		<set name="Fudo">
+			<head>Yaoyotl Helm</head>
+			<neck>Ganesha's Mala</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Phorcys Korazin</body>
+			<hands>Miki. Gauntlets</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Pyrosoul Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Windbuffet Belt</waist>
+			<legs>Otronif Brais +1</legs>
+			<feet>Whirlpool Greaves</feet>
+		</set>
+		
+		<set name="Namas">
+			<ammo>Tulfaire Arrow</ammo>
+			<head>Yaoyotl Helm</head>
+			<neck>Breeze Gorget</neck>
+			<lear>Vulcan's Pearl</lear>
+			<rear>Vulcan's Pearl</rear>
+			<body>Phorcys Korazin</body>
+			<hands>Unkai Kote +2</hands>
+			<lring>Pyrosoul Ring</lring>
+			<rring>Pyrosoul Ring</rring>
+			<back>Thall Mantle</back>
+			<waist>Breeze Belt</waist>
+			<legs>Otronif Brais +1</legs>
+			<feet>Whirlpool Greaves</feet>
+		</set>
+		
+		<set name="Meditate">
+		</set>
+		
+		<set name="PDT">
+			<head>Lithelimb Cap</head>
+			<neck>Twilight Torque</neck>
+			<body>Xaddi Mail</body>
+			<hands>Xaddi Gauntlets</hands>
+			<lring>Defending Ring</lring>
+			<rring>Patricius Ring</rring>
+			<back>Repulse Mantle</back>
+			<waist>Flume Belt</waist>
+			<legs>Xaddi Cuisses</legs>
+			<feet>Xaddi Boots</feet>
+		</set>
+		
+		<set name="MDT"><!--needs 23-->
+			<neck>Twilight Torque</neck>
+			<lear>Merman's Earring</lear>
+			<rear>Merman's Earring</rear>
+			<lring>Shadow Ring</lring>
+			<rring>Defending Ring</rring>
+			<back>Mollusca Mantle</back>
+		</set>
+		
+		<include>
+			<item>Tsurumaru</item>
+			<item>Murasamemaru</item>
+			<item>Duplus Grip</item>
+			<item>Yoichinoyumi</item>
+			<item>Cibitshavore</item>
+			<item quantity="all">Hydra Kofte</item>
+			<item quantity="all">Tulfaire Quiver</item>
+			<item quantity="all">Tulfaire Arrow</item>
+		</include>
+	</sets>
+
+	<variables>
+		<var name="Set">Hybrid</var>
+	</variables>
+
+	<inputcommands>
+		<cmd input="/trigger2">
+			<gearlock delay="5" />
+			<equip set="PDT" />
+		</cmd>
+		<cmd input="/trigger3">
+			<gearlock delay="5" />
+			<equip set="MDT" />
+		</cmd>
+		<cmd input="/changeset ">
+			<setvar name="Set" value="%arg1" />
+			<addtochat color="159">TP Set: $Set</addtochat>
+			<doidlegear />
+		</cmd>
+	</inputcommands>
+		
+			
+	<idlegear>
+		<if p_status="engaged">
+			<if eq_range="yoichinoyumi"><equip set="TP-Yoichi" /></if>
+			<elseif eq_main="murasamemaru"><equip set="TP-Mura" /></elseif>
+			<else><equip set="TP-$Set" /></else>		
+		</if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<jobability>
+		<if ad_name="Meditate"><equip set="Meditate" /></if>
+	</jobability>
+
+	<weaponskill>
+		<if ad_name="Namas Arrow"><equip set="Namas" /></if>
+		<if ad_name="Tachi: Shoha|Tachi: Fudo">
+			<if eq_range="yoichinoyumi">	
+				<change id="200" />
+				<equip set="Namas" />
+			</if>
+			<else><equip when="precast" set="Fudo" /></else>
+		</if>
+	</weaponskill>
+</ashitacast>

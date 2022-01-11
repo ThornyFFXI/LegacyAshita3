@@ -1,0 +1,186 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Idle">
+			<head>Arcadian Beret +1</head>
+			<neck>Twilight Torque</neck>
+			<ear1>Merman's Earring</ear1>
+			<ear2>Merman's Earring</ear2>
+			<body>Kyujutsugi</body>
+			<hands>Orion Bracers +1</hands>
+			<ring1>Defending Ring</ring1>
+			<ring2>Shadow Ring</ring2>
+			<back>Repulse Mantle</back>
+			<waist>Flume Belt</waist>
+			<legs>Orion Braccae +1</legs>
+			<feet>Fajin Boots</feet>
+		</set>
+		<set name="Snapshot">
+			<ammo>Achiyal. Bullet</ammo>
+			<head>Sylvan Gapette +2</head>
+			<body>Sylvan Caban +2</body>
+			<hands>Iuitl Wristbands</hands>
+			<waist>Impulse Belt</waist>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Wurrukatte Boots</feet>
+		</set>
+		<set name="Kraken">
+			<head>Whirlpool Mask</head>
+			<neck>Ocachi Gorget</neck>
+			<ear1>Volley Earring</ear1>
+			<ear2>Tripudio Earring</ear2>
+			<body>Kyujutsugi</body>
+			<hands>Syl. Glvltte. +2</hands>
+			<ring1>Rajas Ring</ring1>
+			<ring2>K'ayres Ring</ring2>
+			<back>Sylvan Chlamys</back>
+			<waist>Goading Belt</waist>
+			<legs>Iuitl Tights</legs>
+			<feet>Orion Socks +1</feet>
+		</set>
+		<set name="Ranged">
+			<ammo>Achiyal. Bullet</ammo>
+			<head>Arcadian Beret +1</head>
+			<neck>Ej Necklace</neck>
+			<ear1>Clearview Earring</ear1>
+			<ear2>Volley Earring</ear2>
+			<body>Kyujutsugi</body>
+			<hands>Sigyn's Bazubands</hands>
+			<ring1>Hajduk Ring +1</ring1>
+			<ring2>Paqichikaji Ring</ring2>
+			<back>Sylvan Chlamys</back>
+			<waist>Elanid Belt</waist>
+			<legs>Orion Braccae +1</legs>
+			<feet>Orion Socks +1</feet>
+		</set>
+		<set name="Ranged-Enm" baseset="Ranged">
+			<body>Orion Jerkin +1</body>
+		</set>
+		<set name="4Hit" baseset="Ranged">
+			<neck>Ocachi Gorget</neck>
+			<ear2>Tripudio Earring</ear2>
+		</set>
+		<set name="Coro">
+			<ammo>Achiyal. Bullet</ammo>
+			<head>Orion Beret +1</head>
+			<neck>Ocachi Gorget</neck>
+			<ear1>Vulcan's Pearl</ear1>
+			<ear2>Vulcan's Pearl</ear2>
+			<body>Orion Jerkin +1</body>
+			<hands>Orion Bracers +1</hands>
+			<ring1>Rajas Ring</ring1>
+			<ring2>Pyrosoul Ring</ring2>
+			<back>Sylvan Chlamys</back>
+			<waist>Breeze Belt</waist>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Orion Socks +1</feet>
+		</set>
+		<set name="LS">
+			<ammo>Achiyal. Bullet</ammo>
+			<head>Orion Beret +1</head>
+			<neck>Light Gorget</neck>
+			<ear1>Drone Earring</ear1>
+			<ear2>Drone Earring</ear2>
+			<body>Orion Jerkin +1</body>
+			<hands>Orion Bracers +1</hands>
+			<ring1>Stormsoul Ring</ring1>
+			<ring2>Stormsoul Ring</ring2>
+			<back>Sylvan Chlamys</back>
+			<waist>Elanid Belt</waist>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Orion Socks +1</feet>
+		</set>
+		<set name="PDT">
+			<neck>Twilight Torque</neck>
+			<ring1>Defending Ring</ring1>
+			<ring2>Patricius Ring</ring2>
+			<back>Repulse Mantle</back>
+			<waist>Flume Belt</waist>
+			<legs>Osmium Cuisses</legs>
+		</set>
+		<include>
+			<item>Hurlbat</item>
+			<item>Kraken Club</item>
+			<item>Annihilator</item>
+			<item quantity="all">Al. Bull. Pouch</item>
+			<item quantity="all">Toolbag (Shihe)</item>
+			<item quantity="all">Squid Sushi +1</item>
+			<item quantity="all">Achiyal. Bullet</item>
+			<item quantity="all">Shihei</item>
+		</include>
+	</sets>
+
+	<variables>
+		<var name="SwapWS">0</var>	
+	</variables>
+
+	<inputcommands>
+		<cmd input="/PDT ">
+			<equip set="PDT" />
+			<gearlock length="%arg1" />
+		</cmd>
+		
+		<cmd input="/update">
+			<doidlegear />
+		</cmd>
+		
+		<cmd input="/Trigger7">
+			<if advanced="$SwapWS=0">
+				<setvar name="SwapWS" value="1" />
+				<addtochat color="57">WS Swap - Enabled</addtochat>
+			</if>
+			<else>
+				<setvar name="SwapWS" value="0" />
+				<addtochat color="57">WS Swap - Disabled</addtochat>
+			</else>
+		</cmd>
+	</inputcommands>
+
+	<idlegear>
+		<if p_status="!engaged"><equip set="Idle" /></if>
+		<elseif eq_main="Kraken Club"><equip set="Kraken" /></elseif>
+	</idlegear>
+
+	<preranged>
+		<equip set="Snapshot" />
+	</preranged>
+
+	<midranged>
+		<!--<if buffactive="!66&!444&!445&!446">
+			<equip lock="true" set="PDT" />
+		</if>-->
+		<if p_subjob="sam"><equip set="4Hit" /></if>
+		<elseif t_name="Kam'lanaut"><equip set="Ranged-ENM" /></elseif>
+		<else><equip set="Ranged" /></else>
+		<if buffactive="73">
+			<equip>
+				<hands>Orion Bracers +1</hands>
+			</equip>
+		</if>
+	</midranged>
+
+	<jobability>
+		<if ad_name="Bounty Shot">
+			<equip>
+				<hands>Syl. Glvltte. +2</hands>
+			</equip>
+		</if>
+	</jobability>
+	
+	<weaponskill>
+		<if ad_name="Coronach">
+			<if buffactive="482" advanced="$SwapWS=1">
+				<equip set="LS" />
+				<change id="221" />
+			</if>
+			<else>
+				<equip set="Coro" />
+			</else>
+		</if>
+	</weaponskill>
+</ashitacast>

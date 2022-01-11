@@ -1,0 +1,63 @@
+<dressme>
+
+	<priority> <!--Set the order in which your containers are filled.  Simply omit a container to remove it from the order.-->
+		<safe equip="true" /> <!--If equip is set to true, packer will be allowed to put equippable items in that container.-->
+		<storage />
+		<locker />
+		<satchel />
+		<sack usable="true" /> <!--If usable is set to true, packer will be allowed to put usable items in that container.-->
+		<case other="true" /> <!--If other is set to true, packer will be allowed to put non-equippable and non-usable items in that container.-->
+		<wardrobe />
+		<safe2 equip="true" usable="true" other="true" /> <!--You can allow multiple kinds of items to be stored in the same container.  All 3 tags will allow all items to be stored there that the game allows.-->
+		<wardrobe2 />
+		<wardrobe3 />
+		<wardrobe4 />
+	</priority>	
+	
+	<inventory> <!--Define items that should never be stored.-->
+	</inventory>
+	
+	<safe> <!--Define items you want to always be stored in mog safe.-->
+		<item augment="S176231485494" quantity="1">Otronif Gloves +1</item>
+		<!--Both tags are optional.  Quantity can be set to 'all', and will default to 1 if the tag isn't there.-->
+	</safe>
+	
+	<safe2> <!--Define items you want to always be stored in second mog safe.-->
+	</safe2>
+	
+	<storage> <!--Define items you want to always be stored in storage.-->
+	</storage>
+	
+	<locker> <!--Define items you want to always be stored in locker.-->
+	</locker>
+	
+	<satchel> <!--Define items you want to always be stored in satchel.-->
+	</satchel>
+	
+	<sack> <!--Define items you want to always be stored in sack.-->
+	</sack>
+	
+	<case> <!--Define items you want to always be stored in case.-->
+	</case>
+	
+	<wardrobe> <!--Define items you want to always be stored in wardrobe.-->
+		<item>Dim. Ring (Holla)</item>
+		<item>Dim. Ring (Dem)</item>
+		<item>Dim. Ring (Mea)</item>
+		<item>Trizek Ring</item>
+		<item>Echad Ring</item>
+		<item>Warp Ring</item>
+		<item>Mecisto. Mantle</item>
+		<item>Nexus Cape</item>
+	</wardrobe>
+	
+	<wardrobe2> <!--Define items you want to always be stored in wardrobe.-->
+	</wardrobe2>
+	
+	<wardrobe3> <!--Define items you want to always be stored in wardrobe.-->
+	</wardrobe3>
+	
+	<wardrobe4> <!--Define items you want to always be stored in wardrobe.-->
+	</wardrobe4>	
+	
+</dressme>

@@ -1,0 +1,201 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<head>Iuitl Headgear +1</head>
+			<neck>Twilight Torque</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Manibozho Jerkin</body>
+			<hands>Iuitl Wristbands +1</hands>
+			<lring>Defending Ring</lring>
+			<rring>Shadow Ring</rring>
+			<back>Repulse Mantle</back>
+			<waist>Flume Belt</waist>
+			<legs>Iuitl Tights +1</legs>
+			<feet>Skd. Jambeaux +1</feet>
+		</set>
+		<set name="TP-Old-Default">
+			<head>Iuitl Headgear +1</head>
+			<neck>Asperity Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Thaumas Coat</body>
+			<hands>Iuitl Wristbands +1</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Windbuffet Belt</waist>
+			<legs>Iuitl Tights +1</legs>
+			<feet>Manibozho boots</feet>
+		</set>
+		<set name="TP-Old-TH">
+			<head>Iuitl Headgear +1</head>
+			<neck>Asperity Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Thaumas Coat</body>
+			<hands>Asn. Armlets +2</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Pya'ekue Belt</waist>
+			<legs>Iuitl Tights +1</legs>
+			<feet>Raid. Poulaines +2</feet>
+		</set>
+		<set name="TP-Acc-Default">
+			<head>Whirlpool Mask</head>
+			<neck>Asperity Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Thaumas Coat</body>
+			<hands>Buremte Gloves</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Hurch'lan Sash</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Manibozho boots</feet>
+		</set>
+		<set name="TP-Acc-TH">
+			<head>Whirlpool Mask</head>
+			<neck>Ej Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Thaumas Coat</body>
+			<hands>Asn. Armlets +2</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Pya'ekue Belt</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Raid. Poulaines +2</feet>
+		</set>
+		<set name="Steps">
+			<head>Whirlpool Mask</head>
+			<neck>Ej Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Heartseeker Earring</rear>
+			<body>Manibozho Jerkin</body>
+			<hands>Buremte Gloves</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Hurch'lan Sasht</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Manibozho boots</feet>				
+		</set>
+		<set name="Evisceration-Old">
+			<head>Whirlpool Mask</head>
+			<neck>Nefarious Collar</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Athos's Tabard</body>
+			<hands>Buremte Gloves</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Rancorous Mantle</back>
+			<waist>Wanion Belt</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Iuitl Gaiters</feet>
+		</set>
+		<set name="Evisceration-Acc">
+		</set>
+		<set name="Exenterator-Old">
+			<head>Whirlpool Mask</head>
+			<neck>Soil Gorget</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Manibozho Jerkin</body>
+			<hands>Iuitl Wristbands +1</hands>
+			<lring>Stormsoul Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Atheling Mantle</back>
+			<waist>Soil Belt</waist>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Iuitl Gaiters</feet>
+		</set>
+		<set name="Exenterator-Acc">
+			<head>Whirlpool Mask</head>
+			<neck>Soil Gorget</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Manibozho Jerkin</body>
+			<hands>Iuitl Wristbands +1</hands>
+			<lring>Stormsoul Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Soil Belt</waist>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Iuitl Gaiters</feet>
+		</set>
+		<include>
+			<item>Mandau</item>
+			<item>Izhiikoh</item>
+			<item>Thief's Knife</item>
+			<item>Raider's Bmrng.</item>
+		</include>
+	</sets>
+
+	<variables>
+		<var name="Set">Old</var>
+		<var name="TH">TH</var>
+	</variables>
+
+	<inputcommands>
+		<cmd input="/trigger5">
+			<setvar name="Set" value="Old" />
+			<addtochat color="57">Set - Old Content</addtochat>
+		</cmd>
+		<cmd input="/trigger6">
+			<setvar name="Set" value="Acc" />
+			<addtochat color="57">Set - High Accuracy</addtochat>
+		</cmd>
+		
+		<cmd input="/trigger9">
+			<if advanced="$TH=Default">
+				<setvar name="TH" value="true" />
+				<addtochat color="57">TH On!</addtochat>
+			</if>
+			<else>
+				<setvar name="TH" value="false" />
+				<addtochat color="57">TH Off!</addtochat>
+			</else>
+		</cmd>
+	</inputcommands>
+
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="TP-$Set-$TH" />
+			<if buffactive="342">
+				<equip><feet>Asn. Poulaines +2</feet></equip>
+			</if>
+			<if buffactive="343">
+				<equip><legs>Asn. Culottes +2</legs></equip>
+			</if>
+		</if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<jobability>
+		<if ad_name="Quickstep|Box Step"><equip set="Steps" /></if>
+		<!--<if spell="Flee"><equip when="precast"><feet>Rogue's Poulaines</feet></equip></if>-->
+		<if ad_name="Assassin's Charge">
+			<equip><feet>Asn. Poulaines +2</feet></equip>
+		</if>
+		<if ad_name="Feint">
+			<equip><legs>Asn. Culottes +2</legs></equip>
+		</if>
+		<if ad_name="Perfect Dodge"><equip><hands>Asn. Armlets +2</hands></equip></if>
+	</jobability>
+
+	<weaponskill>
+		<if ad_name="Exenterator"><equip set="Exenterator-$Set" /></if>
+		<if ad_name="Evisceration"><equip set="Evisceration-$Set" /></if>
+	</weaponskill>
+</ashitacast>

@@ -1,0 +1,413 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand"> <!--Gear when doing nothing-->
+			<main>Terra's Staff</main>
+			<sub>Oneiros Grip</sub>
+			<ammo>Incantor Stone</ammo>
+			<head>Nefer Khat +1</head>
+			<neck>Twilight Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Magnetic Earring</rear>
+			<body>Heka's Kalasiris</body>
+			<hands>Serpentes Cuffs</hands>
+			<lring>Tamas Ring</lring>
+			<rring>Prolix Ring</rring>
+			<back>Umbra Cape</back>
+			<waist>Ninurta's Sash</waist>
+			<legs>Nares Trews</legs>
+			<feet>Herald's Gaiters</feet>
+		</set>
+		<set name="Resting">
+			<main>Chatoyant Staff</main>
+			<sub>Oneiros Grip</sub>
+			<ammo>Ombre Tathlum</ammo>
+			<head>Nefer Khat +1</head>
+			<neck>Twilight Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Magnetic Earring</rear>
+			<body>Heka's Kalasiris</body>
+			<hands>Serpentes Cuffs</hands>
+			<lring>Tamas Ring</lring>
+			<rring>Prolix Ring</rring>
+			<back>Umbra Cape</back>
+			<waist>Pythia Sash +1</waist>
+			<legs>Nares Trews</legs>
+			<feet>Chelona Boots +1</feet>
+		</set>
+		<set name="Nuke">
+			<main>Atinian Staff +1</main>
+			<sub>Wizzan Grip</sub>
+			<range>Aureole</range>
+			<head>Hagondes Hat</head>
+			<neck>Eddy Necklace</neck>
+			<lear>Friomisi Earring</lear>
+			<rear>Crematio Earring</rear>
+			<body>Bokwus Robe</body>
+			<hands>Yaoyotl Gloves</hands>
+			<lring>Galdr Ring</lring>
+			<rring>Icesoul Ring</rring>
+			<back>Refraction Cape</back>
+			<waist>Olympus Belt</waist>
+			<legs>Hagondes Pants</legs>
+			<feet>Manabyss Pigaches</feet>
+		</set>
+		<set name="EleDot" baseset="Nuke">
+			<lear>Lifestorm Earring</lear>
+			<rear>Psystorm Earring</rear>
+			<lring>Maquette Ring</lring>
+			<rring>Sangoma Ring</rring>
+		</set>
+		<set name="Impact">
+			<main>Atinian Staff +1</main>
+			<sub>Wizzan Grip</sub>
+			<range>Aureole</range>
+			<neck>Eddy Necklace</neck>
+			<lear>Lifestorm Earring</lear>
+			<rear>Psystorm Earring</rear>
+			<body>Twilight Cloak</body>
+			<hands>Yaoyotl Gloves</hands>
+			<lring>Maquette Ring</lring>
+			<rring>Sangoma Ring</rring>
+			<back>Ogapepo Cape +1</back>
+			<waist>Olympus Sash</waist>
+			<legs>Bokwus Slops</legs>
+			<feet>Bokwus boots</feet>
+		</set>
+		<set name="Enfeeb-ACC">
+			<main>Atinian Staff +1</main>
+			<sub>Mephitis Grip</sub>
+			<range>Aureole</range>
+			<head>Nahtirah Hat</head>
+			<neck>Weike Torque</neck>
+			<lear>Lifestorm Earring</lear>
+			<rear>Psystorm Earring</rear>
+			<body>Bokwus Robe</body>
+			<hands>Hagondes Cuffs</hands>
+			<lring>Maquette Ring</lring>
+			<rring>Sangoma Ring</rring>
+			<back>Refraction Cape</back>
+			<waist>Ninurta's Sash</waist>
+			<legs>Bokwus Slops</legs>
+			<feet>Bokwus boots</feet>
+		</set>
+		<set name="Enfeeb-MND">
+			<main>Atinian Staff +1</main>
+			<sub>Mephitis Grip</sub>
+			<range>Aureole</range>
+			<head>Nahtirah Hat</head>
+			<neck>Weike Torque</neck>
+			<lear>Lifestorm Earring</lear>
+			<rear>Psystorm Earring</rear>
+			<body>Bokwus Robe</body>
+			<hands>Yaoyotl Gloves</hands>
+			<lring>Maquette Ring</lring>
+			<rring>Sangoma Ring</rring>
+			<back>Ogapepo Cape +1</back>
+			<waist>Ovate Rope</waist>
+			<legs>Bokwus Slops</legs>
+			<feet>Bokwus boots</feet>
+		</set>
+		<set name="Stoneskin">
+			<main>Atinian Staff +1</main>
+			<sub>Vivid Strap +1</sub>
+			<ammo>Incantor Stone</ammo>
+			<head>Nahtirah Hat</head>
+			<neck>Orunmila's Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Magnetic Earring</rear>
+			<body>Hedera Cotehardie</body>
+			<hands>Hagondes Cuffs</hands>
+			<lring>Tamas Ring</lring>
+			<rring>Prolix Ring</rring>
+			<back>Swith Cape +1</back>
+			<waist>Siegel Sash</waist>
+			<legs>Bokwus Slops</legs>
+			<feet>Bokwus boots</feet>
+		</set>
+		<set name="Dark">
+			<main>Atinian Staff +1</main>
+			<sub>Vivid Strap +1</sub>
+			<range>Aureole</range>
+			<head>Nahtirah Hat</head>
+			<neck>Orunmila's Torque</neck>
+			<lear>Lifestorm Earring</lear>
+			<rear>Psystorm Earring</rear>
+			<body>Hedera Cotehardie</body>
+			<hands>Hagondes Cuffs</hands>
+			<lring>Maquette Ring</lring>
+			<rring>Sangoma Ring</rring>
+			<back>Merciful Cape</back>
+			<waist>Ninurta's Sash</waist>
+			<legs>Bokwus Slops</legs>
+			<feet>Bokwus boots</feet>
+		</set>
+		<set name="Stun">
+			<main>Atinian Staff +1</main>
+			<sub>Mephitis Grip</sub>
+			<range>Aureole</range>
+			<head>Nahtirah Hat</head>
+			<neck>Orunmila's Torque</neck>
+			<lear>Lifestorm Earring</lear>
+			<rear>Psystorm Earring</rear>
+			<body>Hedera Cotehardie</body>
+			<hands>Hagondes Cuffs</hands>
+			<lring>Maquette Ring</lring>
+			<rring>Sangoma Ring</rring>
+			<back>Ogapepo Cape +1</back>
+			<waist>Ninurta's Sash</waist>
+			<legs>Bokwus Slops</legs>
+			<feet>Bokwus boots</feet>
+		</set>
+		<set name="Enhancing">
+			<main>Kirin's Pole</main>
+			<sub>Fulcio Grip</sub>
+			<ammo>Savant's Treatise</ammo>
+			<head>Svnt. Bonnet +2</head>
+			<neck>Colossus's Torque</neck>
+			<body>Anhur Robe</body>
+			<lear>Loquac. Earring</lear>
+			<rear>Augment. Earring</rear>
+			<body>Anhur Robe</body>
+			<hands>Svnt. Bracers +2</hands>
+			<back>Merciful Cape</back>
+			<waist>Olympus Sash</waist>
+			<legs>Portent Pants</legs>
+			<feet>Rubeus Boots</feet>
+		</set>
+		<set name="Cure">
+			<main>Chatoyant Staff</main>
+			<sub>Oneiros Grip</sub>
+			<ammo>Incantor Stone</ammo>
+			<head>Gende. Caubeen</head>
+			<neck>Colossus's Torque</neck>
+			<lear>Lifestorm Earring</lear>
+			<rear>Magnetic Earring</rear>
+			<body>Heka's Kalasiris</body>
+			<hands>Bokwus Gloves</hands>
+			<lring>Tamas Ring</lring>
+			<rring>Prolix Ring</rring>
+			<back>Tempered Cape</back>
+			<waist>Pythia Sash +1</waist>
+			<legs>Bokwus Slops</legs>
+			<feet>Argute Loafers +2</feet>
+		</set>
+		<set name="Haste"> <!-- Maximum Recast Reduction -->
+			<main>Atinian Staff +1</main>
+			<sub>Vivid Strap +1</sub>
+			<ammo>Incantor Stone</ammo>
+			<head>Nahtirah Hat</head>
+			<neck>Orunmila's Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Magnetic Earring</rear>
+			<body>Hedera Cotehardie</body>
+			<hands>Bokwus Gloves</hands>
+			<lring>Tamas Ring</lring>
+			<rring>Prolix Ring</rring>
+			<back>Swith Cape +1</back>
+			<waist>Ninurta's Sash</waist>
+			<legs>Bokwus Slops</legs>
+			<feet>Bokwus boots</feet>
+		</set>
+		<set name="Precast">
+			<main>Atinian Staff +1</main>
+			<sub>Vivid Strap +1</sub>
+			<ammo>Incantor Stone</ammo>
+			<head>Nahtirah Hat</head>
+			<neck>Orunmila's Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<body>Anhur Robe</body>
+			<hands>Gendewitha Gages</hands>
+			<back>Swith Cape +1</back>
+			<waist>Witful Belt</waist>
+			<legs>Orvail Pants</legs>
+			<feet>Argute Loafers +2</feet>
+		</set>
+		<set name="Sublimation">
+			<rear>Savant's Earring</rear>
+		</set>
+	</sets>
+
+	<inputcommands>
+		<cmd input="/strat 1">
+			<if buffactive="358|401">
+				<command>/ja "Penury" &lt;me&gt;</command>
+			</if>
+			<elseif buffactive="359|402">
+				<command>/ja "Parsimony" &lt;me&gt;</command>
+			</elseif>
+		</cmd>
+		<cmd input="/strat 2">
+			<if buffactive="358|401">
+				<command>/ja "Celerity" &lt;me&gt;</command>
+			</if>
+			<elseif buffactive="359|402">
+				<command>/ja "Alacrity" &lt;me&gt;</command>
+			</elseif>
+		</cmd>
+		<cmd input="/strat 3">
+			<if buffactive="358|401">
+				<command>/ja "Rapture" &lt;me&gt;</command>
+			</if>
+			<elseif buffactive="359|402">
+				<command>/ja "Ebullience" &lt;me&gt;</command>
+			</elseif>
+		</cmd>
+		<cmd input="/strat 4">
+			<if buffactive="358|401">
+				<command>/ja "Accession" &lt;me&gt;</command>
+			</if>
+			<elseif buffactive="359|402">
+				<command>/ja "Manifestation" &lt;me&gt;</command>
+			</elseif>
+		</cmd>
+		<cmd input="/strat 5">
+			<if buffactive="358|401">
+				<command>/ja "Altruism" &lt;me&gt;</command>
+			</if>
+			<elseif buffactive="359|402">
+				<command>/ja "Focalization" &lt;me&gt;</command>
+			</elseif>
+		</cmd>
+		<cmd input="/strat 6">
+			<if buffactive="358|401">
+				<command>/ja "Tranquility" &lt;me&gt;</command>
+			</if>
+			<elseif buffactive="359|402">
+				<command>/ja "Equanimity" &lt;me&gt;</command>
+			</elseif>
+		</cmd>
+		<cmd input="/strat 7">
+			<if buffactive="358|401">
+				<command>/ja "Perpetuance" &lt;me&gt;</command>
+			</if>
+			<elseif buffactive="359|402">
+				<command>/ja "Immanence" &lt;me&gt;</command>
+			</elseif>
+		</cmd>
+	</inputcommands>
+
+	<jobability>
+		<if ad_name="Light Arts">
+			<if BuffActive="358">
+				<registerbuff id="358" />
+				<clearbuff id="401" />
+				<change id="234" />
+			</if>
+			<else>
+				<registerbuff id="401" />
+				<clearbuff id="358" />
+			</else>
+			<registerbuff id="359" active="false" />
+			<registerbuff id="402" active="false" />
+		</if>
+		<if ad_name="Dark Arts">
+			<if BuffActive="359">
+				<registerbuff id="359" />
+				<clearbuff id="402" />
+				<change id="235" />
+			</if>
+			<else>
+				<registerbuff id="402" />
+				<clearbuff id="359" />
+			</else>
+			<registerbuff id="358" active="false" />
+			<registerbuff id="401" active="false" />
+		</if>
+		<if ad_name="Penury"><registerbuff id="360" /></if>
+		<if ad_name="Parsimony"><registerbuff id="361" /></if>
+		<if ad_name="Celerity"><registerbuff id="362" /></if>
+		<if ad_name="Alacrity"><registerbuff id="363" /></if>
+		<if ad_name="Rapture"><registerbuff id="364" /></if>
+		<if ad_name="Ebullience"><registerbuff id="365" /></if>
+		<if ad_name="Perpetuance"><registerbuff id="469" /></if>
+		<if ad_name="Tabula Rasa"><equip><legs>Argute Pants +2</legs></equip></if>
+	</jobability>
+
+	<idlegear>
+		<if p_status="resting">
+			<equip set="Resting" />
+			<if e_time=">5.59&<18.00"><equip><feet>Serpentes Sabots</feet></equip></if>
+		</if>
+		<else><equip set="Stand" /></else>
+		<if BuffActive="187"><equip set="Sublimation" /></if>
+		<if e_area="*Remnants|Periqia|Ilrusi Atoll|Mamool Ja Training Grounds|Lebros Caverns|Leujoaom Sanctum|Nyzul Isle|The Ashu Talif"><equip><lring>Balrahn's Ring</lring></equip></if>
+		<if e_area="Maquette Abdhaljs-Legion"><equip><lring>Maquette Ring</lring></equip></if>
+	</idlegear>
+
+	<premagic>
+		<equip set="Precast" />
+		<if ad_name="Impact">
+			<equip>
+				<head>Derp</head>
+				<body>Twilight Cloak</body>
+			</equip>
+		</if>
+	</premagic>
+
+
+	<midmagic>
+		<if ad_name="Stun">
+			<equip set="Stun" />
+			<if buffactive="Thunderstorm">
+				<if buffactive="182">
+					<equip><feet>Argute Loafers +2</feet></equip>
+				</if>
+			</if>
+			<return />
+		</if>	
+		<if ad_name="Stoneskin">
+			<equip set="Stoneskin" />
+		</if>
+		<elseif ad_name="Cure*|Curaga*">
+			<equip set="Cure" />
+			<if mode="OR" e_weatherelement="Light" e_dayelement="Light">
+				<equip>
+					<back>Twilight Cape</back>
+					<waist>Korin Obi</waist>
+					<legs>Nares Trews</legs>
+				</equip>
+			</if>
+			<if buffactive="364"><equip><head>Svnt. Bonnet +2</head></equip></if>
+		</elseif>
+		<elseif ad_skill="Ninjutsu"><equip set="Haste" /></elseif>
+		<elseif ad_skill="DarkMagic"><equip set="Dark" /></elseif>
+		<elseif ad_skill="ElementalMagic">
+			<if ad_name="Burn|Choke|Shock|Rasp|Drown|Choke"><equip set="EleDot" /></if>
+			<elseif ad_name="Impact"><equip set="Impact" /></elseif>
+			<else>
+				<equip when="$GearTime" set="Nuke" />
+				<if advanced="%ad_element=%e_dayelement">
+					<if ad_element="Light"><equip><waist>Korin Obi</waist></equip></if>
+					<equip>
+						<!--<rring>Zodiac Ring</rring>-->
+						<back>Twilight Cape</back>
+					</equip>
+				</if>
+				<elseif advanced="%ad_element=%e_weatherelement">
+					<if ad_element="Light"><equip when="midcast"><waist>Korin Obi</waist></equip></if>
+					<equip><back>Twilight Cape</back></equip>
+				</elseif>
+				<if buffactive="365"><equip><head>Svnt. Bonnet +2</head></equip></if>
+			</else>
+		</elseif>
+		<elseif ad_skill="EnfeeblingMagic">
+			<if ad_name="Slow|Paralyze"><equip set="Enfeeb-MND" /></if>
+			<else><equip set="Enfeeb-ACC" /></else>		
+		</elseif>
+		<elseif ad_skill="EnhancingMagic">
+			<if ad_name="Embrava|En*|Bar*|Phalanx"><equip set="Enhancing" /></if>
+			<else><equip set="Haste" /></else>
+			<if ad_name="Regen*"><equip><head>Svnt. Bonnet +2</head></equip></if>
+			<if buffactive="469"><equip><hands>Svnt. Bracers +2</hands></equip></if>
+			<if ad_name="*storm"><equip><feet>Argute Loafers +2</feet></equip></if>
+		</elseif>
+		
+		<if buffactive="360|361" ad_name="!Embrava"><equip><legs>Savant's Pants +2</legs></equip></if>
+	</midmagic>
+</ashitacast>

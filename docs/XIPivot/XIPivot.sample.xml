@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <!-- overlays: string - a comma (,) separated list of overlays to load, overlays are searched in order -->
+    <setting name="overlays">XI-Vision,XI-View,FFXI-HD</setting>
+</settings>

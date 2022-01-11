@@ -1,0 +1,77 @@
+Bellhop is a plugin to make managing your inventory easier.  It operates entirely on typed commands.
+Items can be specified by name("Earth Crystal"), ID(4099), or wildcard match(*Crystal).
+Any item name that includes a space must be encompassed by quotation marks.. for example, "Earth Crystal" versus simply Mercury.
+Names are compared to the item's name as shown in inventory, and are not case sensitive.
+If using a wildcard(*), it will represent any amount of any character in that position.
+For example, *Coffer would match Velkk Coffer, Ig. Gr. Coffer, but not Bdx. Coffer Key.
+Valid locations for commands that accept them are inventory, safe, safe2, storage, locker, satchel, sack, case, wardrobe.
+
+Commands are as follows:
+/drop [Item] - Drops the smallest stack of an item in your inventory.
+/dropall [Item] - Drops all matching items in your inventory.
+
+/get [Item] [Optional: Location] - Retrieves an item from any storage you can currently access.
+If location is specified, Bellhop will only look in that location.
+If you are not currently in your mog house, Bellhop will not attempt to check safe/storage/locker.
+If you are at a nomad moogle, Bellhop will still not check them on it's own.  You can force it by specifying location.
+Modifications:
+/gets [Item] [Optional: Location] - Retrieves up to a stack of an item instead of a single.
+/get# [Item] [Optional: Location] - Retrieves up to # of an item instead of a single.
+Example: /get10 "Echo Drops"
+/getall [Item] [Optional: Location] - Retrieves as many matching items as you have space for.
+
+/put [Item] [Optional: Location] - Puts an item away in any storage you can currently access.
+If location is specified, Bellhop will only check that location.
+If locations are full, Bellhop will not attempt to place items in them.
+If you cannot place an item due to conditions(furniture can't go in storage, only equippables in wardrobe, etc.) then Bellhop will treat that location as full.
+If you are not currently in your mog house, Bellhop will not attempt to check safe/storage/locker.
+If you are at a nomad moogle, Bellhop will still not check them on it's own.  You can force it by specifying location.
+Modifications:
+/puts [Item] [Optional: Location] - Puts away up to a stack of an item instead of a single.
+/put# [Item] [Optional: Location] - Puts away up to # of an item instead of a single.
+/putall [Item] [Optional: Location] - Puts away as many matching items as you have space to store.
+
+/buy [Item Name] [Optional: Quantity] - Buys an item from a standard vendor npc.
+You must be at the npc with the buy menu open.
+If quantity is not specified, buys one.
+
+/sell [Item] - Sells an item from your inventory to NPC.
+You must be at a NPC with the sell menu open.
+Modifications:
+/sells [Item] - Sells up to a stack of an item instead of a single.
+/sell# [Item] - Sells up to # of an item instead of a single.
+/sellall [Item] - Sells all matching items in your inventory.
+
+/baz [Item] [Price] - Lists an item in your inventory in your bazaar for the specified price.
+Example: /baz "Umbral Marrow" 1500000
+You must have your bazaar pricing menu open.
+Modifications:
+/bazall [Item] [Price] - Lists all matching items in your inventory in your bazaar for the specified price.
+Note: Setting a price of 0 will take out of bazaar.
+
+/sort [Location] - Sorts an inventory location.
+
+/tadd [Item] - Places all copies of an item in your inventory into trade and clicks ok.
+Example: /tadd Alexandrite
+You must currently be in a trade with another player, this does not trade to NPCs.
+The confirmation will not display in the window, but it has still been sent.  Do not press OK again.
+Sample usage with mule:  Open trade with mule.  Type /tadd alexandrite on character trading.  Click ok on character receiving.
+If you have more than 8 potential slots to trade, the 8 highest quantity ones will be used.
+
+/autotrade [optional: on/off] - Sets automatic trade acceptance.  If on/off is not specified, will toggle.
+While enabled, you'll automatically accept both trade offers and trade confirmations.
+This should be used with caution, if you put an item into trade then the other person clicks OK you could lose that item.
+When paired with /tadd, makes for very fast item transfers to a mule.
+
+/trade "Item Name" # - Trades # of item to the currently targeted npc.  To trade multiple items, you can extend the command (/trade "H.Q. Marid Hide" 1 "Sisyphus Fragment" 1 "Snow God Core" 1).  Exact spelling must be used, but it is not case sensitive.  This is a direct port from itemtools in ashita2, credit goes to atomos.
+
+/tradeall [Item] - Trades all(up to 8 slots worth) of the specified item(s) to currently targeted npc.  Unlike /trade, wildcard commands are allowed.  For example, if you were trading in both Sapara and Sapara +1 for guild points, you could type '/tradeall Sapara*' with your guild npc targeted.
+
+Notes:
+-Bellhop will never try to bazaar an item that can't be bazaared.
+-Bellhop will never try to NPC an item that can't be NPCed.
+-Bellhop will never try to perform an action on an equipped item or linkshell.
+-Bellhop will never try any action besides changing price on bazaared items.
+-Wildcards are dangerous if not used properly.  If you type '/dropall *' for instance, it will honor the request and drop ALL items.
+-Maintenance can be dangerous as well.  Please do not use Bellhop after a maintenance until it's confirmed that item structure is repaired.
+-I am not responsible for any loss of items that results from not following these suggestions, please take care.

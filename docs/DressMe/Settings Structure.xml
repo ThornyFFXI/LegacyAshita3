@@ -1,0 +1,59 @@
+<dressme>
+
+	<priority> <!--Set the order in which your containers are filled.  Simply omit a container to remove it from the order.-->
+		<bank equiponly="true" /> <!--An equiponly tag will result in only equippable items being stored in that container.-->
+		<bank2 />
+		<storage />
+		<locker />
+		<satchel />
+		<sack />
+		<case noequip="true" /> <!--A noequip tag will result in only non-equippable items being stored in that container.-->
+		<wardrobe />
+	</priority>	
+	
+	<inventory> <!--Define items that should never be stored.-->
+	</inventory>
+	
+	<bank> <!--Define items you want to always be stored in mog safe.-->
+		<item augment="S176231485494" quantity="1">Otronif Gloves +1</item>
+		<!--Both tags are optional.  Quantity can be set to 'all', and will default to 1 if the tag isn't there.-->
+	</bank>
+	
+	<bank2> <!--Define items you want to always be stored in second mog safe.-->
+	</bank2>
+	
+	<storage> <!--Define items you want to always be stored in storage.-->
+	</storage>
+	
+	<locker> <!--Define items you want to always be stored in locker.-->
+	</locker>
+	
+	<satchel> <!--Define items you want to always be stored in satchel.-->
+	</satchel>
+	
+	<sack> <!--Define items you want to always be stored in sack.-->
+	</sack>
+	
+	<case> <!--Define items you want to always be stored in case.-->
+	</case>
+	
+	<wardrobe> <!--Define items you want to always be stored in wardrobe.-->
+	</wardrobe>
+	
+	<!--If an item is  defined in more than one location, they will fill in the order they're listed in the file.-->
+	<!--If an item has a listed location, dressme will attempt to place it there before going to the default order.-->
+	
+	<event name="ADL"> <!--Define an event.-->
+		<item>Shrouded Bijou</item>
+		<item>Odious Skull</item>
+		<item>Odious Horn</item>
+		<item>Odious Blood</item>
+		<item>Odious Pen</item>
+		<item>Fiendish Tome (26)</item>
+		<item>Fiendish Tome (27)</item>
+		<item>Fiendish Tome (28)</item>
+		<item>Fiendish Tome (29)</item>
+		<item>Fiendish Tome (30)</item>
+	</event>
+	
+</dressme>

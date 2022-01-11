@@ -1,0 +1,11 @@
+<dressme>
+	<items> <!--Define items that should be gathered when this profile is used.-->		
+		<item augment="S176231485494" quantity="1">Otronif Gloves +1</item>
+		<!--Both tags are optional.  Quantity can be set to 'all', and will default to 1 if the tag isn't there.-->
+	</items>
+	
+	<event name="voidwatch"> <!--Define event-only items to be gathered when this profile is used with this event as a parameter.-->
+		<item quantity="all">Voiddust</item>
+		<!--Item tags have the same properties here.-->
+	</event>
+</dressme>

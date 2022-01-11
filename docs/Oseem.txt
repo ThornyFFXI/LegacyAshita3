@@ -1,0 +1,61 @@
+Commands
+/oseem load [profilename] - Loads profilename.xml from your ashita/config/oseem folder.
+/oseem start|stop - Starts or stops the plugin.  Ctrl-F1 will also cause an immediate stop if you see an aug you want that isn't in your config.
+/oseem delay # - Sets delay to # milliseconds.  The plugin will wait this length of time after registering an augment, to give you a chance to manually look.  Default is 0.
+/oseem debug on|off - Toggles debug mode.  When debug mode is enabled, all recognized augments are printed to chatlog.  Upon reading an unrecognized augment, the plugin will print it's ID and value then unload itself.  Default is off.
+
+To use the plugin, load an xml and do /oseem start, then trade an item and select your path.  Once you've selected the path, it will cycle augments until it reaches one that meets one of your profiles from the loaded XML.
+Once an augment is met, the plugin will stop spamming and alert you.  At this point, you can either keep the augment(plugin will stop itself), or you can reject it(plugin will start cycling again automatically).
+
+You can configure your xml in 2 different ways.  Here is an example XML:
+
+<oseem>
+	<profile minvalue="40" sound="C:\Alert.wav">
+		<augment id="35" subid="70" value="1">M.Accuracy</augment>
+		<augment id="133" subid="70" value="1">Magic Attack Bonus</augment>
+		<augment id="334" required="8">Magic Burst Dmg.</augment>
+	</profile>
+	<profile>
+		<augment id="140" required="7">Fast Cast</augment>
+	</profile>
+</oseem>
+
+Sound parameter is optional.  If specified, it must be the full path to a wav file.  It will be played when a matching augment is found for that profile.
+Now, the first profile uses both a point comparison and a required item.  This means that, for an item to be kept it needs a total of 40 points(specified in minvalue tag).
+Magic accuracy and Magic Attack Bonus are each worth 1 point, so if there is a total of 40 m.acc and MAB, it will meet the point requirement.
+It also has a required tag on magic burst damage, that means no augment will be kept unless it also has 8 MBD.
+Thus, the first profile will match any augment that has:
+-At least 8 Magic Burst Damage
+AND
+-A total of at least 40 magic accuracy and magic attack bonus
+
+The second profile opts to not use a minimum value.  Instead, it only has one entry, a requirement of 7 FC.
+Thus, the second profile will match any augment that has:
+-At least 7 Fast Cast
+
+This XML illustrates that you can use multiple entirely different profiles if you have multiple potential uses for the piece.  This would be for merlinic, where you may want a FC+7 with nothing else but would also want a good nuking piece.
+
+Your XML can use point values without required values, or required values without point values.
+You can get the augment ID/Names from default.xml and simply copy them into your XML.
+
+
+If an augment you're looking for isn't in the included augmentlist.xml:
+Make a copy of augmentlist in your config folder and load it.  It will keep all augments.
+Turn debug mode on.
+Start the plugin.
+Continue augmenting until your augment appears.
+You will see a line:  New ID:#1  Quantity:#2 and the plugin will unload itself.
+View the item to confirm your augment is giving the amount listed for quantity.
+Add the item to the xml.
+
+For example, you get an augment and see the following output:
+New ID:115 Quantity:4
+(Pet)DEX:8 , (Pet)Critrate:3
+
+After viewing the item, you see that it has Pet:Dex+8 Critrate+3 STore TP+4.
+As the only unlisted augment with a value of 4 is pet store tp, you know the unknown is Pet: Store TP.  From the output, it's ID is 115.
+Now you can add the following line to any xmls, reload it, and plugin will recognize that augment now.
+<augment id="115">(Pet)Store TP</augment>
+
+NOTE: HP and MP have special augments, in that the augment code varies internally with quantity.  For simplicity, the plugin automatically reduces all HP augs to ID:5 and MP augs to ID:9.
+If you were using an older version and found other augment IDs for HP/MP, make sure to update them to 5 and 9.

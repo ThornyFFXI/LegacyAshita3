@@ -1,0 +1,290 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<main>Terra's Staff</main>
+			<sub>Oneiros Grip</sub>
+			<head>Bihu Roundlet +1</head>
+			<neck>Twilight Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Aoidos' Earring</rear>
+			<body>Gende. Bilaut +1</body>
+			<hands>Bihu Cuffs +1</hands>
+			<lring>Patricius Ring</lring>
+			<rring>Prolix Ring</rring>
+			<back>Umbra Cape</back>
+			<waist>Flume Belt</waist>
+			<legs>Gende. Spats +1</legs>
+			<feet>Aoidos' Cothrn. +2</feet>
+		</set>
+		<set name="Melee">
+			<head>Nahtirah Hat</head>
+			<body>Sheikh Manteel</body>
+			<hands>Bokwus Gloves</hands>
+			<waist>Witful Belt</waist>
+			<legs>Gendewitha Spats</legs>
+			<feet>Bokwus boots</feet>
+		</set>
+		<set name="Resting">
+			<main>Chatoyant Staff</main>
+			<sub>Oneiros Grip</sub>
+			<head>Bihu Roundlet +1</head>
+			<neck>Aoidos' Matinee</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Aoidos' Earring</rear>
+			<body>Gende. Bilaut +1</body>
+			<hands>Bihu Cuffs +1</hands>
+			<lring>Sangoma Ring</lring>
+			<rring>Prolix Ring</rring>
+			<back>Umbra Cape</back>
+			<waist>Flume Belt</waist>
+			<legs>Gende. Spats +1</legs>
+			<feet>Chelona Boots +1</feet>
+		</set>
+		<set name="WindAcc">
+			<main>Venabulum</main>
+			<sub>Mephitis Grip</sub>
+			<head>Bihu Roundlet +1</head>
+			<neck>Aoidos' Matinee</neck>
+			<lear>Lifestorm Earring</lear>
+			<rear>Psystorm Earring</rear>
+			<body>Brioso Just. +1</body>
+			<hands>Bihu Cuffs +1</hands>
+			<lring>Sangoma Ring</lring>
+			<rring>Maquette Ring</rring>
+			<back>Rhapsode's Cape</back>
+			<waist>Ovate Rope</waist>
+			<legs>Brioso Cann. +1</legs>
+			<feet>Bokwus boots</feet>
+		</set>
+		<set name="StringAcc" baseset="WindAcc">
+			<hands>Lurid Mitts</hands>
+		</set>
+		<set name="Buff">
+			<main>Legato Dagger</main>
+			<sub>Genbu's Shield</sub>
+			<neck>Aoidos' Matinee</neck>
+			<body>Aoidos' Hngrln. +2</body>
+			<legs>Mdk. Shalwar +1</legs>
+			<feet>Brioso Slippers +1</feet>
+		</set>
+		<set name="Cure">
+			<main>Chatoyant Staff</main>
+			<head>Gende. Caubeen +1</head>
+			<neck>Debilis Medallion</neck>
+			<body>Heka's Kalasiris</body>
+			<hands>Bokwus Gloves</hands>
+			<lring>Haoma's Ring</lring>
+			<rring>Haoma's Ring</rring>
+			<back>Tempered Cape</back>
+			<legs>Brioso Cann. +1</legs>
+			<feet>Bihu Slippers +1</feet>
+		</set>
+		<set name="Haste">
+		</set>
+		<set name="Stoneskin">
+			<head>Nahtirah Hat</head>
+			<body>Anhur Robe</body>
+			<hands>Bokwus Gloves</hands>
+			<back>Swith Cape +1</back>
+			<waist>Siegel Sash</waist>
+			<legs>Brioso Cann. +1</legs>
+			<feet>Bokwus boots</feet>
+		</set>
+		<set name="Precast">
+			<ammo>Impatiens</ammo>
+			<head>Nahtirah Hat</head>
+			<neck>Orunmila's Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<body>Anhur Robe</body>
+			<hands>Gende. Gages +1</hands>
+			<rring>Prolix Ring</rring>
+			<back>Swith Cape +1</back>
+			<waist>Witful Belt</waist>
+			<legs>Orvail Pants</legs>
+			<feet>Chelona Boots +1</feet>
+		</set>
+		<set name="SongPrecast">
+			<main>Felibre's Dague</main>
+			<sub>Genbu's Shield</sub>
+			<ammo>Impatiens</ammo>
+			<head>Aoidos' Calot +2</head>
+			<neck>Orunmila's Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Aoidos' Earring</rear>
+			<body>Sheikh Manteel</body>
+			<hands>Gende. Gages +1</hands>
+			<rring>Prolix Ring</rring>
+			<back>Swith Cape +1</back>
+			<waist>Witful Belt</waist>
+			<legs>Gendewitha Spats</legs>
+			<feet>Bihu Slippers +1</feet>
+		</set>
+		<set name="Cursna">
+			<neck>Debilis Medallion</neck>
+			<hands>Hieros Mittens</hands>
+			<lring>Haoma's Ring</lring>
+			<rring>Haoma's Ring</rring>
+			<feet>Gende. Galoshes</feet>
+		</set>
+	</sets>
+
+	<inputcommands>
+		<cmd input="/singstring ">
+			<setvar name="StringVar" value="true" />
+			<command>/ma %args</command>		
+		</cmd>
+		<cmd input="/stringonce">
+			<setvar name="StringVar" value="true" />
+			<addtochat color="159">Next song will use daurdabla.</addtochat>
+		</cmd>
+	</inputcommands>
+
+	<premagic>
+		<if eq_main="izhiikoh">
+			<equip lock="true">
+				<main>%eq_main</main>
+				<sub>%eq_sub</sub>
+			</equip>
+		</if>
+		<if ad_type="BardSong"><equip set="SongPrecast" /></if>
+		<else><equip set="Precast" /></else>
+		<if ad_element="Earth">
+			<equip>
+				<main>Vishrava I</main>
+				<sub>Vivid Strap</sub>
+			</equip>
+		</if>
+		<elseif ad_element="Fire">
+		</elseif>
+		<elseif ad_element="Thunder">
+		</elseif>
+		<elseif ad_element="Light">
+			<equip>
+				<main>Arka I</main>
+				<sub>Vivid Strap</sub>
+			</equip>
+		</elseif>
+	</premagic>
+
+	<midmagic>
+		<!--<if eq_main="izhiikoh">
+			<equip lock="true">
+				<main>%eq_main</main>
+				<sub>%eq_sub</sub>
+			</equip>
+		</if>-->
+		<equip set="Stand" />
+		<if ad_type="BardSong">
+			<if advanced="$StringVar=true">
+				<setvar name="StringVar" value="false" />
+				<equip lock="true">
+					<range>Daurdabla</range>
+				</equip>
+				<if ad_name="Foe Lullaby*|Horde Lullaby*">
+					<equip when="precast" set="StringAcc">
+						<hands>Brioso Cuffs +1</hands>
+					</equip>
+					<return />
+				</if>
+				<elseif ad_name="Army's Paeon*">
+					<equip set="Stand" />
+					<return />
+				</elseif>
+			</if>
+			<else>
+				<equip lock="true">
+					<range>Gjallarhorn</range>
+				</equip>
+				<if ad_name="Foe Lullaby*|Horde Lullaby*">
+					<equip set="StringAcc">
+						<hands>Brioso Cuffs +1</hands>
+					</equip>
+					<return />				
+				</if>
+				<elseif ad_name="Pining Nocturne|Foe Requiem*|*Elegy|Magic Finale|*Threnody">
+					<equip set="WindAcc" />
+					<return />
+				</elseif>
+			</else>
+			<equip set="Buff" />
+
+			<if ad_name="Sentinel's Scherzo">
+				<equip>
+					<feet>Aoidos' Cothrn. +2</feet>
+				</equip>
+			</if>
+			
+			<elseif ad_name="Advancing March|Victory March">
+				<equip>
+					<hands>Ad. Mnchtte. +2</hands>
+				</equip>
+			</elseif>
+				
+			<elseif ad_name="Sword Madrigal|Blade Madrigal">
+				<equip>
+					<head>Aoidos' Calot +2</head>
+				</equip>
+			</elseif>
+			
+			<elseif ad_name="Mage's Ballad*">
+				<equip>
+					<legs>Aoidos' Rhing. +2</legs>
+				</equip>
+			</elseif>
+			
+			<elseif ad_name="Army's Paeon*">
+				<equip>
+					<head>Brioso Roundlet +1</head>
+				</equip>
+			</elseif>
+		</if>
+		<if ad_type="WhiteMagic">
+			<if ad_name="Cure*|Curaga*">
+				<equip set="Cure" />
+			</if>
+			<elseif ad_name="Stoneskin">
+				<equip set="Stoneskin" />
+			</elseif>
+			<elseif ad_name="Cursna">
+				<equip set="Cursna" />
+			</elseif>
+		</if>
+	</midmagic>
+
+	<preranged>
+		<equip><range>Aureole</range></equip>
+	</preranged>
+		
+	<idlegear>
+		<if eq_main="izhiikoh">
+			<equip lock="true">
+				<main>%eq_main</main>
+				<sub>%eq_sub</sub>
+			</equip>
+		</if>
+		<if p_status="resting"><equip set="Resting" /></if>
+		<elseif p_status="engaged" eq_main="izhiikoh">
+			<equip set="Melee" />
+		</elseif>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<jobability>
+		<if ad_name="Soul Voice">
+			<equip><legs>Bihu Cannions</legs></equip>
+		</if>
+		<if ad_name="Troubadour">
+			<equip><body>Bihu Justaucorps</body></equip>
+		</if>
+		<if ad_name="Nightingale">
+			<equip><feet>Bihu Slippers +1</feet></equip>
+		</if>
+		<if ad_name="Pianissimo"><registerbuff id="409" /></if>
+	</jobability>
+</ashitacast>

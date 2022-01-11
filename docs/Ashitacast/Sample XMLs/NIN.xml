@@ -1,0 +1,90 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>
+		<set name="Stand">
+			<ammo>Demonry Stone</ammo>
+			<head>Otronif Mask +1</head>
+			<neck>Twilight Torque</neck>
+			<lear>Merman's Earring</lear>
+			<rear>Merman's Earring</rear>
+			<body>Otro. Harness +1</body>
+			<hands>Otronif Gloves +1</hands>
+			<lring>Defending Ring</lring>
+			<rring>Shadow Ring</rring>
+			<back>Repulse Mantle</back>
+			<waist>Flume Belt</waist>
+			<legs>Otronif Brais +1</legs>
+			<feet>Danzo Sune-ate</feet>
+		</set>
+		<set name="TP">
+			<ammo>Jukukik Feather</ammo>
+			<head>Whirlpool Mask</head>
+			<neck>Ej Necklace</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Otro. Harness +1</body>
+			<hands>Otronif Gloves +1</hands>
+			<lring>Mars's Ring</lring>
+			<rring>Epona's Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Anguinus Belt</waist>
+			<legs>Otronif Brais +1</legs>
+			<feet>Otronif Boots +1</feet>
+		</set>
+		<set name="Shun">
+			<ammo>Jukukik Feather</ammo>
+			<head>Felistris Mask</head>
+			<neck>Light Gorget</neck>
+			<lear>Steelflash Earring</lear>
+			<rear>Bladeborn Earring</rear>
+			<body>Otro. Harness +1</body>
+			<hands>Otronif Gloves +1</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Thundersoul Ring</rring>
+			<back>Letalis Mantle</back>
+			<waist>Light Belt</waist>
+			<legs>Manibozho Brais</legs>
+			<feet>Otronif Boots +1</feet>				
+		</set>
+		<set name="Precast">
+			<ammo>Impatiens</ammo>
+			<head>Athos's Chapeau</head>
+			<neck>Orunmila's Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<!--body>Mirke Wardecors</body-->
+			<hands>Thaumas Gloves</hands>
+			<back>Mujin Mantle</back>
+		</set>
+		<include>
+			<item>Raimitsukane</item>
+			<item>Kaitsuburi</item>
+			<item quantity="all">Squid Sushi +1</item>
+			<item quantity="all">Toolbag (Shihe)</item>
+			<item quantity="all">Shihei</item>
+		</include>
+	</sets>
+
+	<idlegear>
+		<if p_status="engaged"><equip set="TP" /></if>
+		<else><equip set="Stand" /></else>
+	</idlegear>
+
+	<premagic>
+		<equip set="Precast" />
+		<if ad_name="Utsusemi*"><equip><neck>Magoraga Beads</neck></equip></if>
+	</premagic>
+
+	<midmagic>
+		<equip set="Stand" />
+		<if ad_name="Utsusemi*"><equip><feet>Iga Kyahan +2</feet></equip></if>
+	</midmagic>
+
+	<weaponskill>
+		<if ad_name="Blade: Shun"><equip set="Shun" /></if>
+	</weaponskill>
+</ashitacast>
