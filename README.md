@@ -1,3 +1,1 @@
-# Ashitav3-Release
-
-The main release package of Ashita v3. Contains all the needed files for users to get up and running. Used by the launcher/injector to auto-update as well.
+Ashita v3 files, as of November 9, 2021.  This should be used on private servers with clients from early 2021 to november 9, 2021.  This will not function correctly with clients that include the November 10, 2021(JST) update or later.
